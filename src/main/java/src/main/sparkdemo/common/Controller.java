@@ -1,7 +1,5 @@
 package src.main.sparkdemo.common;
 
-import org.apache.spark.api.java.JavaRDD;
-
 /**
  * @projectName: spark_demo
  * @package: src.main.sparkdemo.common
@@ -13,7 +11,5 @@ import org.apache.spark.api.java.JavaRDD;
  */
 public abstract class Controller implements TController{
     @Override
-    public JavaRDD dispatch() {
-        return null;
-    }
+    public abstract void dispatch();
 }

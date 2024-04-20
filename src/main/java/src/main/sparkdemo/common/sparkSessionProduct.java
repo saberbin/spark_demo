@@ -3,7 +3,7 @@ package src.main.sparkdemo.common;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import src.main.util.projectEnv;
+import src.main.sparkdemo.util.projectEnv;
 
 import java.util.HashMap;
 

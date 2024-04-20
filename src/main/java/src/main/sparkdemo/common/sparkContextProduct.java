@@ -2,7 +2,7 @@ package src.main.sparkdemo.common;
 
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
-import src.main.util.projectEnv;
+import src.main.sparkdemo.util.projectEnv;
 
 /**
  * @projectName: jdmo

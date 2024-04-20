@@ -7,7 +7,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.apache.spark.streaming.kafka010.ConsumerStrategies;
 import org.apache.spark.streaming.kafka010.KafkaUtils;
 import org.apache.spark.streaming.kafka010.LocationStrategies;
-import src.main.util.projectEnv;
+import src.main.sparkdemo.util.projectEnv;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -35,7 +35,6 @@ public class sparkStreamingProduct implements streamingProduct, Serializable {
             this.options.put("port", options.get("port"));
 
         } else if (source.equals("kafka")) {
-            sparkEnv sparkRunEnv = projectEnv.getSparkRunEnv();
             this.kafkaConfig.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, options.get("server"));
             this.kafkaConfig.put(ConsumerConfig.GROUP_ID_CONFIG, options.get("groupid"));
             this.kafkaConfig.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
