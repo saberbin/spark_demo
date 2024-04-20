@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @package: src.main.sparkdemo.util
  * @className: sparkEnv
  * @author: NelsonWu
- * @description: TODO
+ * @description: spark环境共享变量
  * @date: 2024/4/19 0:51
  * @version: 1.0
  */
