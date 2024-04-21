@@ -34,13 +34,13 @@ public class wordCountRDDApplication extends Application implements Serializable
         projectSettings projSettings = new projectSettings();
         projSettings.setLocalVar();
         HashMap<String, String> options = src.main.sparkdemo.util.projectSettings.getProjectSettings();
-        options.put("path", "/home/saberbin/data/wc.txt");
+        options.put("path", "/home/userName/data/wc.txt");
 
         try {
             sparkRDDAppController appController = new sparkRDDAppController();
             appController.dispatch();
         }catch (Exception e){
-            System.out.println(e);
+            throw new RuntimeException(e);
         }
 
         projEnv.clear();

@@ -51,7 +51,6 @@ public class sparkStreamingKafkaApplication extends Application implements Seria
             streamingContext.start();
             streamingContext.awaitTermination();
         }catch (Exception e){
-            System.out.println(e);
             throw new RuntimeException(e);
         }
 
